@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffcc33">
+
+        <ImageView
+            android:id="@+id/back_btn_payment_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:tint="@color/black"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/back_arrow_icon"
+            android:layout_marginLeft="5dp"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foody Wallet"
+            android:textAllCaps="true"
+            android:fontFamily="@font/bungee"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#696969"
+            android:transitionName="loader_wallet_one"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Add Money to Wallet"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="5dp"
+            android:text="₹"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/amount_show_area_payment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/amount_show_area_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/md_grey_400" />
+
+        <RadioButton
+            android:id="@+id/debit_card_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit Card"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/md_grey_400" />
+
+        <RadioButton
+            android:id="@+id/credit_card_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/md_grey_400" />
+
+        <RadioButton
+            android:id="@+id/upi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BHIM UPI"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/md_grey_400" />
+
+        <RadioButton
+            android:id="@+id/net_banking_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Net Banking"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/md_grey_400" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/stamp_wallet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/icici" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/hdfc" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/sbi" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/axisbank" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/centralbank" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

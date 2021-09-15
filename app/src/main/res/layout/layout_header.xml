@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@drawable/header_bg_one"
+    android:gravity="center"
+    android:layout_height="250dp">
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/profine_icon_dashbord"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:focusableInTouchMode="true"
+            android:elevation="0dp"
+            android:src="@drawable/profile_img" />
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Muthu Swami Aiyara"
+            android:textSize="18sp"
+            android:fontFamily="@font/baloo"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/verigied_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/proved_icon"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="muthuswami123@gmail.com"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black" />
+
+</LinearLayout>

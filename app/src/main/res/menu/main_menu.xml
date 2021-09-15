@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/offer_icon"
+            android:title="Offers" />
+
+        <item
+            android:id="@+id/nav_Order"
+            android:icon="@drawable/scoty_icon"
+            android:title="My Order" />
+
+    </group>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/persion_iocn"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/wallet_icon"
+                    android:title="wallet" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_rateUs"
+                android:icon="@drawable/rateus_icon"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/support_icon"
+                android:title="Support" />
+
+        </menu>
+
+    </item>
+
+</menu>

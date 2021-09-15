@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FoodHouse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#000</item>
+        <item name="colorPrimaryVariant">#000</item>
+        <item name="colorOnPrimary">#000</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#000</item>
+        <item name="colorSecondaryVariant">#000</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

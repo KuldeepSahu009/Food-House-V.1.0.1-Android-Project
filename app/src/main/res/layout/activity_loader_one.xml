@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoaderActivityOne">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/burger_loder_gif"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/food_one"
+        android:transitionName="loader_burger_one" />
+
+</LinearLayout>

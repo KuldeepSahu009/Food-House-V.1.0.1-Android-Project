@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FECE2F"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    tools:context=".RateUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/back_btn_rateUsAc"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            app:tint="@color/black"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow_icon"
+            android:focusableInTouchMode="true" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/rateus_gif"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bangers"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your opinion matters to us! "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:text="We work super hard to serve you best and\nwould love to know how would you rate\nour app?"
+            android:textAlignment="center"
+            android:textColor="#696969"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#c5c5c5"
+            android:progressTint="#ffcc33"
+            android:outlineAmbientShadowColor="#525252"
+            android:outlineSpotShadowColor="#3b3b3b"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <Button
+            android:id="@+id/star_submit_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FECE2F"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            app:backgroundTint="#FECE2F" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/love_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/baloo"
+                android:text="Love from Food House"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/copy_right_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Copyright © Kuldeep sahu | All right reserved | 2021"
+                android:textAlignment="center"
+                android:textColor="#696969"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:focusableInTouchMode="true"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

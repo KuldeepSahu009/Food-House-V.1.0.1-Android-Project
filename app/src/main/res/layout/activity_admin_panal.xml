@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AdminPanalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cancle_btn_admin_ds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@drawable/cancle_icon"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin\nDashboard"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bungee"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/underconstruction_gif"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design &amp; Developed by:"
+            android:textSize="16sp"
+            android:textColor="#696969"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="__sky_warrior_009"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Kuldeep Sahu)"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

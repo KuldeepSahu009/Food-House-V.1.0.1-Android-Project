@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20161525364",
+    "project_id": "food-house-8f01b",
+    "storage_bucket": "food-house-8f01b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20161525364:android:7d14bf55954c3f798d8321",
+        "android_client_info": {
+          "package_name": "com.pvt.foodhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20161525364-ei8rcjaqbf8aue3bn60s58rnh3niv8p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRWfIVeu8k0piYSdKvThukJFJeRfMVgl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20161525364-ei8rcjaqbf8aue3bn60s58rnh3niv8p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
